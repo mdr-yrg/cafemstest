@@ -4,12 +4,20 @@
 
         const hamburger = document.querySelector('#js-hamburger');
         const nav = document.querySelector('#js-slide-menu');
+       
 
         hamburger.addEventListener('click', function () {
 
             hamburger.classList.toggle('active');
             nav.classList.toggle('active');
+
         });
+
+        
+        nav.addEventListener('click', function(){
+            nav.classList.remove('active');
+        });
+    
 
         const targets = document.getElementsByClassName('fade');
         for (let i = targets.length; i--;) {
@@ -25,6 +33,9 @@
 
             observer.observe(targets[i]);
         }
+
+
+
 
     });
 })();
