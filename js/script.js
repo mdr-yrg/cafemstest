@@ -16,6 +16,7 @@
         
         nav.addEventListener('click', function(){
             nav.classList.remove('active');
+            hamburger.classList.remove('active');
         });
     
 
