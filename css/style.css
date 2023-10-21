@@ -141,9 +141,10 @@ p {
     width: 100%;
     left: 0;
     transform: translateX(100%);
-    transition: ease 2s;
+    transition: ease 1s;
     margin-top: -9px;
     z-index: 9999;
+    opacity:0.95;
 }
 
 .slide-menu .nav-item {
